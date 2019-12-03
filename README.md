@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a JavaScript library for building user interfaces. It was developed by and is maintained by developers at Facebook. React can also be used in the development of single-page or mobile applications. React solves speed and efficiency problems by rendering only the components that have changed, not reloading the entire web page.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in "react" means to take a user interface (UI) and break it up into smaller, more manageable components. To think in "react" also means dynamic change. The application changes as the "state" changes. Only the changed "state" is rendered to the DOM making the React Application very efficient.
 
 - [ ] Describe state.
 
+React components have a built-in state object. The state object is where you store property values that belongs to the component. When the state object changes, the component re-renders. In other words, state is a variable that changes. State can have an initial value set and changing values changes the state of the application.
+
 - [ ] Describe props.
 
+Properties or "props" are arguments that are passed into React components. Props are set by parent component and passed down to child component for rendering on the UI. Props are any property that you want to make reusable when you want to pass state to another component.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects occur outside of the function you are using. It occurs after the DOM loads. Using the useEffect hook in React for an API call is an example of a side effect. When the data comes back from an API call and the state has changed, the sync-ing is done by passing the new "state" property from the parent component to the child component where it is rendered on the UI.
 
 ## Project Set Up
 
